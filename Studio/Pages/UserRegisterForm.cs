@@ -31,7 +31,7 @@ namespace Studio.Pages
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            var user = new UserEntity(TextBoxName.Text, TextBoxEmail.Text, TextBoxPassword.Text, DateTimePicker.Value);
+            var user = new UserEntity(0, TextBoxName.Text, TextBoxEmail.Text, TextBoxPassword.Text, DateTimePicker.Value);
             _userRepository.SaveUser(user);
         }
     }

@@ -8,20 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Studio.Pages
+namespace Studio.Pages.Inventory
 {
-    public partial class HomeForm : Form
+    public partial class InstrumentalsForm : Form
     {
-        public HomeForm()
+        public InstrumentalsForm()
         {
             InitializeComponent();
         }
 
-        private void buttonInventory_Click(object sender, EventArgs e)
+        private void buttonBacktoInventory_Click(object sender, EventArgs e)
         {
             var inventoryForm = new InventoryForm();
             Hide();
-            inventoryForm.Show();   
+            inventoryForm.Show();
         }
     }
 }

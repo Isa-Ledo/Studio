@@ -5,8 +5,9 @@ namespace Studio.Models.Repository
     [Table("Users")]
     public class UserEntity
     {
-        public UserEntity(string name, string email, string password, DateTime birthDate)
+        public UserEntity(int id, string name, string email, string password, DateTime birthDate)
         {
+            Id = id;
             Name = name;
             Email = email;
             Password = password;

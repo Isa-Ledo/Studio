@@ -1,68 +1,65 @@
-﻿using Studio.Pages.Inventory;
+﻿using Studio.Models.Enum;
+using Studio.Pages.Inventory;
 
 namespace Studio.Pages
 {
     public partial class InventoryForm : Form
     {
-        public InventoryForm()
+        public HomeForm Home { get; set; }
+        public InventoryForm(HomeForm form)
         {
+            Home = form;
+            Home.Hide();
+            Show();
             InitializeComponent();
         }
-
+        
         private void buttonJewelry_Click(object sender, EventArgs e)
         {
-            var jewelryForm = new JewelryForm();
-            Hide();
-            jewelryForm.Show();   
+            var productsForm = new ProductsForm(CategoryEnum.Jewelry, this);
+            productsForm.ShowDialog();   
         }
 
         private void buttonNeedles_Click(object sender, EventArgs e)
         {
-            var needlesForm = new NeedlesForm();
-            Hide();
-            needlesForm.Show();
+            ShowProductsForm(CategoryEnum.Needles);
         }
 
         private void buttonDisposables_Click(object sender, EventArgs e)
         {
-            var disposablesForm = new DisposablesForm();
-            Hide();
-            disposablesForm.Show();
+            ShowProductsForm(CategoryEnum.Disposables);
         }
 
         private void buttonBackHome_Click(object sender, EventArgs e)
         {
-            var homeForm = new HomeForm();
             Hide();
-            homeForm.Show();    
+            Home.Show();
         }
 
         private void buttonCleaningProducts_Click(object sender, EventArgs e)
         {
-            var cleaningProductsForm = new CleaningProductsForm();
-            Hide();
-            cleaningProductsForm.Show();
+            ShowProductsForm(CategoryEnum.CleaningProducts);
         }
 
         private void buttonSterilization_Click(object sender, EventArgs e)
         {
-            var sterilizationForm = new SterilizationForm();
-            Hide();
-            sterilizationForm.Show();   
+            ShowProductsForm(CategoryEnum.Sterilization);
         }
 
         private void buttonBiosecutiry_Click(object sender, EventArgs e)
         {
-            var biosecurityForm = new BiosecurityForm();
-            Hide();
-            biosecurityForm.Show(); 
+            ShowProductsForm(CategoryEnum.Biosecurity);
         }
 
         private void buttonInstrumentals_Click(object sender, EventArgs e)
         {
-            var instrumentalsForm = new InstrumentalsForm();
-            Hide();
-            instrumentalsForm.Show();
+            ShowProductsForm(CategoryEnum.Instrumentals);
+        }
+
+        private void ShowProductsForm(CategoryEnum category)
+        {
+            var productsForm = new ProductsForm(category, this);
+            productsForm.ShowDialog();
         }
     }
 }

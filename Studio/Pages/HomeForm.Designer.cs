@@ -49,7 +49,7 @@
             this.buttonInventory.Size = new System.Drawing.Size(75, 68);
             this.buttonInventory.TabIndex = 1;
             this.buttonInventory.UseVisualStyleBackColor = true;
-            this.buttonInventory.Click += new System.EventHandler(this.buttonInventory_Click);
+            this.buttonInventory.Click += new System.EventHandler(this.ButtonInventory_Click);
             // 
             // HomeForm
             // 

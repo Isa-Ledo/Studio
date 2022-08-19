@@ -17,11 +17,9 @@ namespace Studio.Pages
             InitializeComponent();
         }
 
-        private void buttonInventory_Click(object sender, EventArgs e)
+        private void ButtonInventory_Click(object sender, EventArgs e)
         {
-            var inventoryForm = new InventoryForm();
-            Hide();
-            inventoryForm.Show();   
+            var inventoryForm = new InventoryForm(this);
         }
     }
 }

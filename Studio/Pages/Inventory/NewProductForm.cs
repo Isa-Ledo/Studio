@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Studio.Models.Enum;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +14,19 @@ namespace Studio.Pages.Inventory
 {
     public partial class NewProductForm : Form
     {
-        public NewProductForm()
+        public readonly InventoryForm InventoryForm;
+        public NewProductForm(InventoryForm inventoryForm)
         {
             InitializeComponent();
+            InventoryForm = inventoryForm;
+            InventoryForm.Hide();
+            Show();
         }
 
-        private void buttonBacktoCategories_Click(object sender, EventArgs e)
+        private void ButtonBacktoCategories_Click(object sender, EventArgs e)
         {
-            var biosecutiryForm = new BiosecurityForm();
             Hide();
-            biosecutiryForm.Show();
+            InventoryForm.Show();
         }
     }
 }

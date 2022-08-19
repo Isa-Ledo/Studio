@@ -97,7 +97,7 @@
             this.buttonBacktoCategories.Size = new System.Drawing.Size(22, 23);
             this.buttonBacktoCategories.TabIndex = 6;
             this.buttonBacktoCategories.UseVisualStyleBackColor = true;
-            this.buttonBacktoCategories.Click += new System.EventHandler(this.buttonBacktoCategories_Click);
+            this.buttonBacktoCategories.Click += new System.EventHandler(this.ButtonBacktoCategories_Click);
             // 
             // buttonSave
             // 

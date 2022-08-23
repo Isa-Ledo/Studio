@@ -50,5 +50,11 @@ namespace Studio
             userRegisterForm.Show();
             
         }
+
+        private void textboxSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+                ButtonEntrar_Click(sender, e);
+        }
     }
 }

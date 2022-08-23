@@ -8,7 +8,9 @@ namespace Studio.Models.Enum
         CleaningProducts = 3,
         Sterilization = 4,
         Needles = 5,
-        Biosecurity = 6,
-        Instrumentals = 7
+        Instrumentals = 8,
+        Antisepsis = 9,
+        EPI = 10
+
     }
 }

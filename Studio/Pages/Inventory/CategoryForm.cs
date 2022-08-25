@@ -6,7 +6,7 @@ using Studio.Models.Repository;
 
 namespace Studio.Pages.Inventory
 {
-    public partial class ProductsForm : Form
+    public partial class CategoryForm : Form
     {
         public CategoryEnum CategoryId { get; set; }
 
@@ -14,7 +14,7 @@ namespace Studio.Pages.Inventory
 
         public InventoryForm InventoryForm { get; set; }
 
-        public ProductsForm(CategoryEnum categoryId, InventoryForm inventoryForm)
+        public CategoryForm(CategoryEnum categoryId, InventoryForm inventoryForm)
         {
             _productRepository = new ProductRepository(new Connection());
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace Studio.Pages.Inventory
 
         private void buttonNewProduct_Click(object sender, EventArgs e)
         {
-            var newproductForm = new NewProductForm(InventoryForm);
+            var newproductForm = new NewProductForm(InventoryForm, CategoryId);
             Hide();
             newproductForm.Show();  
         }

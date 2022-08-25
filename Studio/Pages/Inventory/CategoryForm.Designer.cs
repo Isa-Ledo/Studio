@@ -1,6 +1,6 @@
 ﻿namespace Studio.Pages.Inventory
 {
-    partial class ProductsForm
+    partial class CategoryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,11 +36,11 @@
             // 
             // buttonNewProduct
             // 
-            this.buttonNewProduct.Location = new System.Drawing.Point(911, 14);
+            this.buttonNewProduct.Location = new System.Drawing.Point(801, 14);
             this.buttonNewProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonNewProduct.Name = "buttonNewProduct";
             this.buttonNewProduct.Size = new System.Drawing.Size(219, 38);
-            this.buttonNewProduct.TabIndex = 0;
+            this.buttonNewProduct.TabIndex = 2;
             this.buttonNewProduct.Text = "Adicionar produto";
             this.buttonNewProduct.UseVisualStyleBackColor = true;
             this.buttonNewProduct.Click += new System.EventHandler(this.buttonNewProduct_Click);
@@ -59,22 +59,24 @@
             // DataGridProductsView
             // 
             this.DataGridProductsView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridProductsView.Location = new System.Drawing.Point(176, 163);
+            this.DataGridProductsView.Location = new System.Drawing.Point(23, 94);
             this.DataGridProductsView.Name = "DataGridProductsView";
             this.DataGridProductsView.RowHeadersWidth = 62;
             this.DataGridProductsView.RowTemplate.Height = 33;
-            this.DataGridProductsView.Size = new System.Drawing.Size(819, 306);
+            this.DataGridProductsView.Size = new System.Drawing.Size(997, 535);
             this.DataGridProductsView.TabIndex = 3;
             // 
-            // ProductsForm
+            // CategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.ClientSize = new System.Drawing.Size(1069, 662);
             this.Controls.Add(this.DataGridProductsView);
             this.Controls.Add(this.buttonBacktoInventory);
             this.Controls.Add(this.buttonNewProduct);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "CategoryForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductsForm";
             this.Load += new System.EventHandler(this.ProductsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridProductsView)).EndInit();
@@ -87,7 +89,5 @@
         private Button buttonNewProduct;
         private Button buttonBacktoInventory;
         private DataGridView DataGridProductsView;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Name;
     }
 }

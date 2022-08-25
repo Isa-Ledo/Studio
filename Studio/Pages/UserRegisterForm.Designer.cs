@@ -54,7 +54,7 @@
             this.ButtonSave.Location = new System.Drawing.Point(335, 392);
             this.ButtonSave.Name = "ButtonSave";
             this.ButtonSave.Size = new System.Drawing.Size(112, 34);
-            this.ButtonSave.TabIndex = 1;
+            this.ButtonSave.TabIndex = 5;
             this.ButtonSave.Text = "Salvar";
             this.ButtonSave.UseVisualStyleBackColor = true;
             this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
@@ -64,14 +64,14 @@
             this.TextBoxName.Location = new System.Drawing.Point(118, 107);
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.Size = new System.Drawing.Size(529, 31);
-            this.TextBoxName.TabIndex = 2;
+            this.TextBoxName.TabIndex = 1;
             // 
             // TextBoxEmail
             // 
             this.TextBoxEmail.Location = new System.Drawing.Point(118, 183);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.Size = new System.Drawing.Size(529, 31);
-            this.TextBoxEmail.TabIndex = 4;
+            this.TextBoxEmail.TabIndex = 2;
             // 
             // LabelEmail
             // 
@@ -88,7 +88,7 @@
             this.TextBoxPassword.Location = new System.Drawing.Point(118, 262);
             this.TextBoxPassword.Name = "TextBoxPassword";
             this.TextBoxPassword.Size = new System.Drawing.Size(529, 31);
-            this.TextBoxPassword.TabIndex = 6;
+            this.TextBoxPassword.TabIndex = 3;
             // 
             // LabelPassword
             // 
@@ -123,7 +123,7 @@
             this.DateTimePicker.Location = new System.Drawing.Point(298, 307);
             this.DateTimePicker.Name = "DateTimePicker";
             this.DateTimePicker.Size = new System.Drawing.Size(300, 31);
-            this.DateTimePicker.TabIndex = 10;
+            this.DateTimePicker.TabIndex = 4;
             // 
             // UserRegisterForm
             // 
@@ -141,6 +141,7 @@
             this.Controls.Add(this.ButtonSave);
             this.Controls.Add(this.LabelName);
             this.Name = "UserRegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserRegister";
             this.ResumeLayout(false);
             this.PerformLayout();

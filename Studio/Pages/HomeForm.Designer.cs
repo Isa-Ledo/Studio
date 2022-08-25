@@ -35,30 +35,34 @@
             // labelInventory
             // 
             this.labelInventory.AutoSize = true;
-            this.labelInventory.Location = new System.Drawing.Point(49, 41);
+            this.labelInventory.Location = new System.Drawing.Point(70, 68);
+            this.labelInventory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInventory.Name = "labelInventory";
-            this.labelInventory.Size = new System.Drawing.Size(49, 15);
+            this.labelInventory.Size = new System.Drawing.Size(76, 25);
             this.labelInventory.TabIndex = 0;
             this.labelInventory.Text = "Estoque";
             // 
             // buttonInventory
             // 
             this.buttonInventory.Image = global::Studio.Properties.Resources.inventory;
-            this.buttonInventory.Location = new System.Drawing.Point(37, 68);
+            this.buttonInventory.Location = new System.Drawing.Point(53, 113);
+            this.buttonInventory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonInventory.Name = "buttonInventory";
-            this.buttonInventory.Size = new System.Drawing.Size(75, 68);
+            this.buttonInventory.Size = new System.Drawing.Size(107, 113);
             this.buttonInventory.TabIndex = 1;
             this.buttonInventory.UseVisualStyleBackColor = true;
             this.buttonInventory.Click += new System.EventHandler(this.ButtonInventory_Click);
             // 
             // HomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.buttonInventory);
             this.Controls.Add(this.labelInventory);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "HomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);
             this.PerformLayout();

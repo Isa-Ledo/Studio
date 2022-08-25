@@ -16,8 +16,7 @@ namespace Studio.Pages
         
         private void buttonJewelry_Click(object sender, EventArgs e)
         {
-            var productsForm = new ProductsForm(CategoryEnum.Jewelry, this);
-            productsForm.ShowDialog();   
+            ShowProductsForm(CategoryEnum.Jewelry);
         }
 
         private void buttonNeedles_Click(object sender, EventArgs e)
@@ -46,19 +45,23 @@ namespace Studio.Pages
             ShowProductsForm(CategoryEnum.Sterilization);
         }
 
-        private void buttonBiosecutiry_Click(object sender, EventArgs e)
-        {
-            ShowProductsForm(CategoryEnum.Biosecurity);
-        }
-
         private void buttonInstrumentals_Click(object sender, EventArgs e)
         {
             ShowProductsForm(CategoryEnum.Instrumentals);
         }
+        private void buttonAntisepsis_Click(object sender, EventArgs e)
+        {
+            ShowProductsForm(CategoryEnum.Antisepsis);
+        }
+
+        private void buttonEPI_Click(object sender, EventArgs e)
+        {
+            ShowProductsForm(CategoryEnum.EPI);
+        }
 
         private void ShowProductsForm(CategoryEnum category)
         {
-            var productsForm = new ProductsForm(category, this);
+            var productsForm = new CategoryForm(category, this);
             productsForm.ShowDialog();
         }
     }

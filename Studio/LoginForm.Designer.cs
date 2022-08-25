@@ -72,7 +72,8 @@
             this.textboxSenha.Name = "textboxSenha";
             this.textboxSenha.PasswordChar = '*';
             this.textboxSenha.Size = new System.Drawing.Size(193, 31);
-            this.textboxSenha.TabIndex = 3;
+            this.textboxSenha.TabIndex = 1;
+            this.textboxSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textboxSenha_KeyDown);
             // 
             // label1
             // 
@@ -99,7 +100,7 @@
             this.buttonShowPassword.Location = new System.Drawing.Point(372, 154);
             this.buttonShowPassword.Name = "buttonShowPassword";
             this.buttonShowPassword.Size = new System.Drawing.Size(29, 31);
-            this.buttonShowPassword.TabIndex = 11;
+            this.buttonShowPassword.TabIndex = 4;
             this.buttonShowPassword.UseVisualStyleBackColor = true;
             this.buttonShowPassword.Click += new System.EventHandler(this.ButtonShowPassword_Click);
             // 
@@ -119,7 +120,7 @@
             this.LinkLabelCadastro.Location = new System.Drawing.Point(254, 224);
             this.LinkLabelCadastro.Name = "LinkLabelCadastro";
             this.LinkLabelCadastro.Size = new System.Drawing.Size(240, 25);
-            this.LinkLabelCadastro.TabIndex = 13;
+            this.LinkLabelCadastro.TabIndex = 3;
             this.LinkLabelCadastro.TabStop = true;
             this.LinkLabelCadastro.Text = "Ainda não tem cadastro? fds";
             this.LinkLabelCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelCadastro_Click);
@@ -128,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(729, 308);
             this.Controls.Add(this.LinkLabelCadastro);
             this.Controls.Add(this.LabelError);
@@ -140,6 +141,7 @@
             this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.textboxLogin);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

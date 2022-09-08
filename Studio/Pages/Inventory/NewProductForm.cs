@@ -52,5 +52,11 @@ namespace Studio.Pages.Inventory
             if (e.KeyCode == Keys.Enter)
                 buttonSave_Click(sender, e);
         }
+
+        private void NewProductForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+                Application.Exit();
+        }
     }
 }

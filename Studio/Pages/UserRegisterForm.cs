@@ -24,5 +24,11 @@ namespace Studio.Pages
             var user = new UserEntity(0, TextBoxName.Text, TextBoxEmail.Text, TextBoxPassword.Text, DateTimePicker.Value);
             _userRepository.SaveUser(user);
         }
+
+        private void UserRegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+                Application.Exit();
+        }
     }
 }

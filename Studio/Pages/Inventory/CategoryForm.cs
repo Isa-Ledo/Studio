@@ -51,5 +51,11 @@ namespace Studio.Pages.Inventory
         {
 
         }
+
+        private void CategoryForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+                Application.Exit();
+        }
     }
 }

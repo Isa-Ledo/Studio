@@ -56,5 +56,10 @@ namespace Studio
             if(e.KeyCode == Keys.Enter)
                 ButtonEntrar_Click(sender, e);
         }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

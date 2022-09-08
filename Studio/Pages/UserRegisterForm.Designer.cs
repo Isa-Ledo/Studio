@@ -43,17 +43,19 @@
             // LabelName
             // 
             this.LabelName.AutoSize = true;
-            this.LabelName.Location = new System.Drawing.Point(118, 79);
+            this.LabelName.Location = new System.Drawing.Point(83, 47);
+            this.LabelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(61, 25);
+            this.LabelName.Size = new System.Drawing.Size(40, 15);
             this.LabelName.TabIndex = 0;
             this.LabelName.Text = "Nome";
             // 
             // ButtonSave
             // 
-            this.ButtonSave.Location = new System.Drawing.Point(335, 392);
+            this.ButtonSave.Location = new System.Drawing.Point(234, 235);
+            this.ButtonSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonSave.Name = "ButtonSave";
-            this.ButtonSave.Size = new System.Drawing.Size(112, 34);
+            this.ButtonSave.Size = new System.Drawing.Size(78, 20);
             this.ButtonSave.TabIndex = 5;
             this.ButtonSave.Text = "Salvar";
             this.ButtonSave.UseVisualStyleBackColor = true;
@@ -61,75 +63,83 @@
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(118, 107);
+            this.TextBoxName.Location = new System.Drawing.Point(83, 64);
+            this.TextBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(529, 31);
+            this.TextBoxName.Size = new System.Drawing.Size(372, 23);
             this.TextBoxName.TabIndex = 1;
             // 
             // TextBoxEmail
             // 
-            this.TextBoxEmail.Location = new System.Drawing.Point(118, 183);
+            this.TextBoxEmail.Location = new System.Drawing.Point(83, 110);
+            this.TextBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBoxEmail.Name = "TextBoxEmail";
-            this.TextBoxEmail.Size = new System.Drawing.Size(529, 31);
+            this.TextBoxEmail.Size = new System.Drawing.Size(372, 23);
             this.TextBoxEmail.TabIndex = 2;
             // 
             // LabelEmail
             // 
             this.LabelEmail.AutoSize = true;
-            this.LabelEmail.Location = new System.Drawing.Point(118, 155);
+            this.LabelEmail.Location = new System.Drawing.Point(83, 93);
+            this.LabelEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelEmail.Name = "LabelEmail";
-            this.LabelEmail.Size = new System.Drawing.Size(54, 25);
+            this.LabelEmail.Size = new System.Drawing.Size(36, 15);
             this.LabelEmail.TabIndex = 3;
             this.LabelEmail.Text = "Email";
             this.LabelEmail.Click += new System.EventHandler(this.LabelEmail_Click);
             // 
             // TextBoxPassword
             // 
-            this.TextBoxPassword.Location = new System.Drawing.Point(118, 262);
+            this.TextBoxPassword.Location = new System.Drawing.Point(83, 157);
+            this.TextBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBoxPassword.Name = "TextBoxPassword";
-            this.TextBoxPassword.Size = new System.Drawing.Size(529, 31);
+            this.TextBoxPassword.Size = new System.Drawing.Size(372, 23);
             this.TextBoxPassword.TabIndex = 3;
             // 
             // LabelPassword
             // 
             this.LabelPassword.AutoSize = true;
-            this.LabelPassword.Location = new System.Drawing.Point(118, 234);
+            this.LabelPassword.Location = new System.Drawing.Point(83, 140);
+            this.LabelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelPassword.Name = "LabelPassword";
-            this.LabelPassword.Size = new System.Drawing.Size(60, 25);
+            this.LabelPassword.Size = new System.Drawing.Size(39, 15);
             this.LabelPassword.TabIndex = 5;
             this.LabelPassword.Text = "Senha";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(298, 28);
+            this.label1.Location = new System.Drawing.Point(209, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 25);
+            this.label1.Size = new System.Drawing.Size(113, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "Cadastro de Usuário";
             // 
             // LabelBirthDate
             // 
             this.LabelBirthDate.AutoSize = true;
-            this.LabelBirthDate.Location = new System.Drawing.Point(118, 313);
+            this.LabelBirthDate.Location = new System.Drawing.Point(83, 188);
+            this.LabelBirthDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelBirthDate.Name = "LabelBirthDate";
-            this.LabelBirthDate.Size = new System.Drawing.Size(173, 25);
+            this.LabelBirthDate.Size = new System.Drawing.Size(114, 15);
             this.LabelBirthDate.TabIndex = 8;
             this.LabelBirthDate.Text = "Data de Nascimento";
             // 
             // DateTimePicker
             // 
             this.DateTimePicker.CustomFormat = "";
-            this.DateTimePicker.Location = new System.Drawing.Point(298, 307);
+            this.DateTimePicker.Location = new System.Drawing.Point(209, 184);
+            this.DateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.Size = new System.Drawing.Size(300, 31);
+            this.DateTimePicker.Size = new System.Drawing.Size(211, 23);
             this.DateTimePicker.TabIndex = 4;
             // 
             // UserRegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(560, 270);
             this.Controls.Add(this.DateTimePicker);
             this.Controls.Add(this.LabelBirthDate);
             this.Controls.Add(this.label1);
@@ -140,9 +150,11 @@
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.ButtonSave);
             this.Controls.Add(this.LabelName);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserRegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserRegister";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserRegisterForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

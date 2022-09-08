@@ -43,50 +43,45 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(37, 93);
-            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelName.Location = new System.Drawing.Point(26, 56);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(158, 25);
+            this.labelName.Size = new System.Drawing.Size(103, 15);
             this.labelName.TabIndex = 0;
             this.labelName.Text = "Nome do Produto";
             // 
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
-            this.labelPrice.Location = new System.Drawing.Point(56, 142);
-            this.labelPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPrice.Location = new System.Drawing.Point(39, 85);
             this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(135, 25);
+            this.labelPrice.Size = new System.Drawing.Size(88, 15);
             this.labelPrice.TabIndex = 2;
             this.labelPrice.Text = "Preço de Venda";
             // 
             // labelQuantity
             // 
             this.labelQuantity.AutoSize = true;
-            this.labelQuantity.Location = new System.Drawing.Point(86, 234);
-            this.labelQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQuantity.Location = new System.Drawing.Point(60, 140);
             this.labelQuantity.Name = "labelQuantity";
-            this.labelQuantity.Size = new System.Drawing.Size(105, 25);
+            this.labelQuantity.Size = new System.Drawing.Size(69, 15);
             this.labelQuantity.TabIndex = 4;
             this.labelQuantity.Text = "Quantidade";
             // 
             // buttonBacktoCategories
             // 
             this.buttonBacktoCategories.Image = global::Studio.Properties.Resources.seta;
-            this.buttonBacktoCategories.Location = new System.Drawing.Point(17, 20);
-            this.buttonBacktoCategories.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonBacktoCategories.Location = new System.Drawing.Point(12, 12);
             this.buttonBacktoCategories.Name = "buttonBacktoCategories";
-            this.buttonBacktoCategories.Size = new System.Drawing.Size(31, 38);
+            this.buttonBacktoCategories.Size = new System.Drawing.Size(22, 23);
             this.buttonBacktoCategories.TabIndex = 6;
             this.buttonBacktoCategories.UseVisualStyleBackColor = true;
             this.buttonBacktoCategories.Click += new System.EventHandler(this.ButtonBacktoCategories_Click);
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(245, 294);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonSave.Location = new System.Drawing.Point(172, 176);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(107, 38);
+            this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Text = "Salvar";
             this.buttonSave.UseVisualStyleBackColor = true;
@@ -94,47 +89,52 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(202, 87);
+            this.textBoxName.Location = new System.Drawing.Point(141, 52);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(363, 31);
+            this.textBoxName.Size = new System.Drawing.Size(255, 23);
             this.textBoxName.TabIndex = 1;
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(202, 136);
+            this.textBoxPrice.Location = new System.Drawing.Point(141, 82);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(150, 31);
+            this.textBoxPrice.Size = new System.Drawing.Size(106, 23);
             this.textBoxPrice.TabIndex = 2;
             // 
             // textBoxQuantity
             // 
-            this.textBoxQuantity.Location = new System.Drawing.Point(202, 231);
+            this.textBoxQuantity.Location = new System.Drawing.Point(141, 139);
+            this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxQuantity.Name = "textBoxQuantity";
-            this.textBoxQuantity.Size = new System.Drawing.Size(150, 31);
+            this.textBoxQuantity.Size = new System.Drawing.Size(106, 23);
             this.textBoxQuantity.TabIndex = 4;
             this.textBoxQuantity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxQuantity_KeyDown);
             // 
             // labelCostPrice
             // 
             this.labelCostPrice.AutoSize = true;
-            this.labelCostPrice.Location = new System.Drawing.Point(56, 189);
+            this.labelCostPrice.Location = new System.Drawing.Point(39, 113);
+            this.labelCostPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCostPrice.Name = "labelCostPrice";
-            this.labelCostPrice.Size = new System.Drawing.Size(132, 25);
+            this.labelCostPrice.Size = new System.Drawing.Size(87, 15);
             this.labelCostPrice.TabIndex = 11;
             this.labelCostPrice.Text = "Preço de Custo";
             // 
             // textBoxCostPrice
             // 
-            this.textBoxCostPrice.Location = new System.Drawing.Point(203, 183);
+            this.textBoxCostPrice.Location = new System.Drawing.Point(142, 110);
+            this.textBoxCostPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCostPrice.Name = "textBoxCostPrice";
-            this.textBoxCostPrice.Size = new System.Drawing.Size(150, 31);
+            this.textBoxCostPrice.Size = new System.Drawing.Size(106, 23);
             this.textBoxCostPrice.TabIndex = 3;
             // 
             // NewProductForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 365);
+            this.ClientSize = new System.Drawing.Size(453, 219);
             this.Controls.Add(this.textBoxCostPrice);
             this.Controls.Add(this.labelCostPrice);
             this.Controls.Add(this.textBoxQuantity);
@@ -145,10 +145,10 @@
             this.Controls.Add(this.labelQuantity);
             this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.labelName);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NewProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewProductForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NewProductForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

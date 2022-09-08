@@ -42,25 +42,28 @@
             // 
             // textboxLogin
             // 
-            this.textboxLogin.Location = new System.Drawing.Point(208, 105);
+            this.textboxLogin.Location = new System.Drawing.Point(146, 63);
+            this.textboxLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textboxLogin.Name = "textboxLogin";
-            this.textboxLogin.Size = new System.Drawing.Size(427, 31);
+            this.textboxLogin.Size = new System.Drawing.Size(300, 23);
             this.textboxLogin.TabIndex = 0;
             // 
             // labelLogin
             // 
             this.labelLogin.AutoSize = true;
-            this.labelLogin.Location = new System.Drawing.Point(66, 108);
+            this.labelLogin.Location = new System.Drawing.Point(46, 65);
+            this.labelLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(136, 25);
+            this.labelLogin.Size = new System.Drawing.Size(89, 15);
             this.labelLogin.TabIndex = 1;
             this.labelLogin.Text = "Digite seu login";
             // 
             // ButtonEntrar
             // 
-            this.ButtonEntrar.Location = new System.Drawing.Point(286, 262);
+            this.ButtonEntrar.Location = new System.Drawing.Point(200, 157);
+            this.ButtonEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonEntrar.Name = "ButtonEntrar";
-            this.ButtonEntrar.Size = new System.Drawing.Size(159, 34);
+            this.ButtonEntrar.Size = new System.Drawing.Size(111, 20);
             this.ButtonEntrar.TabIndex = 2;
             this.ButtonEntrar.Text = "Entrar";
             this.ButtonEntrar.UseVisualStyleBackColor = true;
@@ -68,19 +71,21 @@
             // 
             // textboxSenha
             // 
-            this.textboxSenha.Location = new System.Drawing.Point(208, 154);
+            this.textboxSenha.Location = new System.Drawing.Point(146, 92);
+            this.textboxSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textboxSenha.Name = "textboxSenha";
             this.textboxSenha.PasswordChar = '*';
-            this.textboxSenha.Size = new System.Drawing.Size(193, 31);
+            this.textboxSenha.Size = new System.Drawing.Size(136, 23);
             this.textboxSenha.TabIndex = 1;
             this.textboxSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textboxSenha_KeyDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(142, 157);
+            this.label1.Location = new System.Drawing.Point(99, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 25);
+            this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Senha";
             // 
@@ -88,18 +93,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(286, 19);
+            this.label2.Location = new System.Drawing.Point(200, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 30);
+            this.label2.Size = new System.Drawing.Size(122, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Dark Matter";
             // 
             // buttonShowPassword
             // 
             this.buttonShowPassword.Image = ((System.Drawing.Image)(resources.GetObject("buttonShowPassword.Image")));
-            this.buttonShowPassword.Location = new System.Drawing.Point(372, 154);
+            this.buttonShowPassword.Location = new System.Drawing.Point(260, 92);
+            this.buttonShowPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonShowPassword.Name = "buttonShowPassword";
-            this.buttonShowPassword.Size = new System.Drawing.Size(29, 31);
+            this.buttonShowPassword.Size = new System.Drawing.Size(20, 19);
             this.buttonShowPassword.TabIndex = 4;
             this.buttonShowPassword.UseVisualStyleBackColor = true;
             this.buttonShowPassword.Click += new System.EventHandler(this.ButtonShowPassword_Click);
@@ -108,18 +115,20 @@
             // 
             this.LabelError.AutoSize = true;
             this.LabelError.ForeColor = System.Drawing.Color.DarkRed;
-            this.LabelError.Location = new System.Drawing.Point(270, 58);
+            this.LabelError.Location = new System.Drawing.Point(189, 35);
+            this.LabelError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelError.Name = "LabelError";
-            this.LabelError.Size = new System.Drawing.Size(0, 25);
+            this.LabelError.Size = new System.Drawing.Size(0, 15);
             this.LabelError.TabIndex = 12;
             this.LabelError.Visible = false;
             // 
             // LinkLabelCadastro
             // 
             this.LinkLabelCadastro.AutoSize = true;
-            this.LinkLabelCadastro.Location = new System.Drawing.Point(254, 224);
+            this.LinkLabelCadastro.Location = new System.Drawing.Point(178, 134);
+            this.LinkLabelCadastro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkLabelCadastro.Name = "LinkLabelCadastro";
-            this.LinkLabelCadastro.Size = new System.Drawing.Size(240, 25);
+            this.LinkLabelCadastro.Size = new System.Drawing.Size(157, 15);
             this.LinkLabelCadastro.TabIndex = 3;
             this.LinkLabelCadastro.TabStop = true;
             this.LinkLabelCadastro.Text = "Ainda não tem cadastro? fds";
@@ -127,10 +136,10 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(729, 308);
+            this.ClientSize = new System.Drawing.Size(510, 185);
             this.Controls.Add(this.LinkLabelCadastro);
             this.Controls.Add(this.LabelError);
             this.Controls.Add(this.buttonShowPassword);
@@ -140,9 +149,11 @@
             this.Controls.Add(this.ButtonEntrar);
             this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.textboxLogin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
